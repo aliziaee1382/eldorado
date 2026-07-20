@@ -270,7 +270,7 @@ export default function AdminPanel({
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === 'admin' || password === '0003' || password === '') {
+    if (password === 'qwertyuiop1234567890') {
       setIsAuthenticated(true);
       localStorage.setItem('eldorado_admin_auth', 'true');
       setAuthError('');
@@ -553,7 +553,7 @@ export default function AdminPanel({
                 }`}
               />
               <p className="text-[10px] text-gray-400 dark:text-gray-500 mt-2">
-                {isRtl ? 'راهنما: رمز عبور admin یا 0003 یا فیلد خالی است.' : 'Hint: Password is admin or 0003 or empty.'}
+                {isRtl ? 'راهنمایی: رمز password هست' : 'Hint: Password is password'}
               </p>
             </div>
 
